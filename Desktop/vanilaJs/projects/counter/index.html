@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter || project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2 class="text-3xl font-extrabold  text-gray-900 sm:text-4xl">
+        <span class="block">Ready to dive in?</span>
+        <span class="block text-indigo-600">Start your counter.</span>
+      </h2>
+
+ <br />
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-gray-50">
+  
+    <h1 class="value  text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl " style="text-align: center;margin-top: 20px;">
+        0
+      </h1>
+      
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      
+    
+        
+        <div class="inline-flex rounded-md shadow">
+          <a href="#" class="btn decrease inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+            Decrease
+          </a>
+        </div>
+
+        <div class="mt-8 ml-3 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex rounded-md shadow">
+              <a href="#" class="btn reset inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+               Reset Counter
+              </a>
+            </div>
+
+        <div class="ml-3 inline-flex rounded-md shadow">
+            <a href="#" class="btn increase inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+              Increase
+            </a>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="./script.js"></script>
+
+  </body>
+</html>
