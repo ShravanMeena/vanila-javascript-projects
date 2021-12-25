@@ -35,14 +35,14 @@ function Row(props) {
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
-          {row.firstname + " " + row.lastname}
+          {row?.firstname + " " + row?.lastname}
         </TableCell>
-        <TableCell align="left">{row.user.phone}</TableCell>
-        <TableCell align="left">{row.profession}</TableCell>
-        <TableCell align="left">{row.email}</TableCell>
-        <TableCell align="left">{row.shared}</TableCell>
-        <TableCell align="left">{row.user.usertype.toUpperCase()}</TableCell>
-        <TableCell align="right">{row.joinwhatsapp ? "Yes" : "No"}</TableCell>
+        <TableCell align="left">{row?.user?.phone}</TableCell>
+        <TableCell align="left">{row?.profession}</TableCell>
+        <TableCell align="left">{row?.email}</TableCell>
+        <TableCell align="left">{row?.shared}</TableCell>
+        <TableCell align="left">{row?.user?.usertype?.toUpperCase()}</TableCell>
+        <TableCell align="right">{row?.joinwhatsapp ? "Yes" : "No"}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
