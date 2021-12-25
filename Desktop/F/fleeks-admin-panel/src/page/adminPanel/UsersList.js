@@ -44,6 +44,7 @@ function Row(props) {
         <TableCell align="left">{row?.user?.usertype?.toUpperCase()}</TableCell>
         <TableCell align="right">{row?.joinwhatsapp ? "Yes" : "No"}</TableCell>
       </TableRow>
+      
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
